@@ -1,0 +1,69 @@
+.aside-menu-verical {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding-top: 5rem;
+  width: 250px;
+  min-width: 250px;
+  height: 100%;
+  background-color: #9a1a49;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 0 10px 10px 0;
+}
+
+.foto {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: solid 2px #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nombre {
+  color: #ffffff;
+}
+
+.botones {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  gap: 5px;
+  background-color: #ffffffb5;
+  color: #871d39;
+  transition: all 0.3s ease;
+  border: none;
+  border: solid 2px rgb(255, 255, 255);
+}
+
+.botones:hover {
+  background-color: #ffffff;
+  border: solid 2px rgba(255, 255, 255, 0);
+  color: #ab1942;
+ 
+}
+
+.section-contacto {
+  background: linear-gradient(#ffa9a96d, #fe7b9174);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  gap: 8px;
+  border: solid 2px rgb(255, 255, 255);
+  transition: all 0.09s ease;
+}
+
+.section-contacto:hover {
+  box-shadow: 0 4px 8px rgba(255, 167, 167, 0.712);
+  transform: scale(1.05);
+}

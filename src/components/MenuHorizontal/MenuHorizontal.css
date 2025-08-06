@@ -1,0 +1,73 @@
+.menu-horizontal-contenedor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  backdrop-filter: blur(10px);
+  padding: 1rem 5rem;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: all 2s ease;
+  background-color: #ffbdd27b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Al aparecer */
+.menu-horizontal-contenedor.aparecer {
+  animation: slideDown 0.5s ease forwards;
+}
+
+/* Cuando hace scroll */
+.menu-horizontal-contenedor.fixed {
+  position: fixed;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Opcional: hover cuando está fijo */
+.menu-horizontal-contenedor.fixed:hover {
+  background-color: white;
+}
+
+/* Lista horizontal */
+.menu-lista {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-lista li a {
+  text-decoration: none;
+  color: #ab1942;
+  font-weight: bold;
+}
+
+.li:hover {
+  border-bottom: solid 3px#ab1942;
+}
+.li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 40px;
+  border-bottom: solid 3px rgba(78, 17, 17, 0);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
